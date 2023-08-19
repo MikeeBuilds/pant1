@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
+
 const HOME: NextPage = () => {
   return (
     <div className="relative w-full h-[1117px] overflow-hidden bg-[url('/home@3x.png')] bg-cover bg-no-repeat bg-[top] text-left text-[29px] text-white font-commodus">
@@ -13,9 +14,28 @@ const HOME: NextPage = () => {
       <div className="absolute top-[985px] left-[calc(50%_-_348px)] leading-[0%] font-extralight font-metropolis text-center inline-block w-[696px] h-[31px]">
         The Pinnacle of DeFi Efficiency and Optimization.
       </div>
-      <section className="absolute top-[156px] left-[calc(50%_-_735px)] text-[120px] font-commodus [background:linear-gradient(89.35deg,_#c5a059,_#deb750_28.65%,_#e6d48a_51.56%,_#f6dd75_76.56%,_#c1a05d)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] text-center inline-block w-[1469px] h-[115px] [backdrop-filter:blur(14px)] mix-blend-normal">
-        Pantheon Ecosystem
-      </section>
+      <section
+  style={{
+    position: "absolute",
+    top: "156px",
+    left: "calc(50% - 735px)",
+    fontSize: "120px",
+    fontFamily: "Commodus",
+    background: "linear-gradient(89.35deg, #c5a059, #deb750 28.65%, #e6d48a 51.56%, #f6dd75 76.56%, #c1a05d)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    textAlign: "center",
+    display: "inline-block",
+    width: "1469px",
+    height: "130px", // Adjust as needed
+    lineHeight: "1.2", // Adjust as needed
+  }}
+>
+  Pantheon Ecosystem
+</section>
+
+
+
       <div className="absolute top-[26px] left-[1374px] w-[319px] h-[29px] text-mini">
         <div className="absolute top-[8px] left-[94px] hidden w-[71px] h-[13px]">
           explore
